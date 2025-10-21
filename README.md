@@ -1,3 +1,8 @@
+# iOS background attachement fixed
+
+This is a fix for iOS and the `background-attachment: fixed;` issue.
+
+
 # Barebones Boilerplate 
 
 This is available from https://github.com/siramsay/bare-bones-boiler-plate
