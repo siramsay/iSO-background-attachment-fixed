@@ -1,0 +1,93 @@
+:root {
+    --body-color: #ffffff;
+}
+
+/* Make box-sing default to border-box */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* Basic error checking on mandatory CSS properties */
+html:not([lang]),html[lang=""] { border-top: 20px solid red; }
+img:not([alt]),img[alt=""] { border: 5px dashed red; }
+canvas:not([role]),canvas:not([aria-label]),canvas[role=""],canvas[aria-label=""] { border: 5px dashed red; }
+
+body {
+  color: var(--body-color);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+
+/* Background-attachment: fixed for iOS*/
+.container-fixed-bg {}
+.container-fixed-bg {
+  width: 100%;
+  height: auto;
+
+  /* Important */
+  position: relative;
+}
+
+.fixed-bg-wrapper {
+  mask-image: url("mask-bg.svg");
+  /* mask-size: 100% 100%; */
+  /* mask-clip: border;*/
+  /* clip-path: rect(5px 5px 160px 145px round 20%);*/
+  /* clip: rect(0, auto, auto, 0);*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*transform: translateZ(0);
+  will-change: transform; */
+}
+
+.fixed-bg-content {
+  z-index: 3;
+  background: transparent;
+  position: relative;
+  height: 120vh;
+}
+
+/* Set some basic layout */
+.layout__region {
+  display: flex;
+  max-width: 1140px;
+  width: calc(100% - 48px);
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.section-2 {
+  height: 70vh;
+  background: #97b4d1;
+}
+
+.section-3 {
+  height: 60vh;
+  background: #813406;
+}
