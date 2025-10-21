@@ -33,7 +33,6 @@ body {
 }
 
 /* Background-attachment: fixed for iOS*/
-.container-fixed-bg {}
 .container-fixed-bg {
   width: 100%;
   height: auto;
