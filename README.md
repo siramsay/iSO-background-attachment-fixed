@@ -1,4 +1,4 @@
-# iOS background attachement fixed
+# iOS background attachment fixed solution
 
 This is a fix for iOS and the `background-attachment: fixed;` issue.
 
