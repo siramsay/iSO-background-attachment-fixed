@@ -54,7 +54,7 @@ body {
   height: 100%;
 }
 
-.background {
+.fixed-bg {
   position: fixed;
   display: block;
   top: 0;
