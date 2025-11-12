@@ -43,10 +43,7 @@ body {
 
 .fixed-bg-wrapper {
   mask-image: url("mask-bg.svg");
-  /* mask-size: 100% 100%; */
-  /* mask-clip: border;*/
-  /* clip-path: rect(5px 5px 160px 145px round 20%);*/
-  /* clip: rect(0, auto, auto, 0);*/
+  /* clip: rect(0, auto, auto, 0); */
   position: absolute;
   top: 0;
   left: 0;
@@ -61,32 +58,37 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  /*transform: translateZ(0);
-  will-change: transform; */
+  /* transform: translateZ(0);
+     will-change: transform;
+   */
 }
 
 .fixed-bg-content {
-  z-index: 3;
-  background: transparent;
   position: relative;
-  height: 120vh;
 }
 
 /* Set some basic layout */
 .layout__region {
-  display: flex;
   max-width: 1140px;
   width: calc(100% - 48px);
   margin: 0 auto;
   padding: 100px 0;
 }
 
+/* Helper CSS - content heights */
+.items {
+  height: 60vh;
+}
+
 .section-2 {
-  height: 70vh;
   background: #97b4d1;
+  height: 70vh;
 }
 
 .section-3 {
-  height: 60vh;
   background: #813406;
+  height: 60vh;
 }
+
+
+
